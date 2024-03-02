@@ -1,0 +1,51 @@
+
+.tabletop {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  border: 2px solid #ccc;
+  width: 250px;
+  height: 250px;
+}
+
+.tabletop-cell {
+  border: 1px solid gray;
+  position: relative;
+}
+
+.toy-robot {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #ffa500; /* Orange color */
+  transform: translate(33%, 69%);
+}
+
+.toy-robot.north {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.toy-robot.east {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.toy-robot.south {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.toy-robot.west {
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.command-controls {
+  margin-top: 20px;
+}
+
+.command-btn{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 0px 5px;
+}
